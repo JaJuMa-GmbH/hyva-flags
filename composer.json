@@ -1,0 +1,25 @@
+{
+  "name": "jajuma/hyva-flags",
+  "description": "This Magento 2 extension provides country & language icons as SVGs for Magento 2 sites using",
+  "type": "magento2-module",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "email": "info@jajuma.de",
+      "name": "JaJuMa"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "hyva-themes/magento2-theme-module": ">=1.1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jajuma\\HyvaFlags\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

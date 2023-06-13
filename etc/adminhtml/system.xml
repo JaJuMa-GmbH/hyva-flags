@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author    JaJuMa GmbH <info@jajuma.de>
+ * @copyright Copyright (c) 2022-present JaJuMa GmbH <https://www.jajuma.de>. All rights reserved.
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="jajuma" sortOrder="999" class="jajuma-tab" translate="label">
+            <label>JaJuMa</label>
+        </tab>
+        <section id="hyvaflags" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+            <label>Hyvä Flags</label>
+            <tab>jajuma</tab>
+            <resource>Jajuma_HyvaFlags::config_jajuma_hyvaflags</resource>
+            <group id="extension_info" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Extension Information</label>
+                <attribute type="expanded">1</attribute>
+                <field id="extension_info_text" translate="label comment" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <frontend_model>Jajuma\HyvaFlags\Block\System\Config\Form\Jajuma\Module</frontend_model>
+                    <comment>
+                        <![CDATA[
+		                <div style="margin:auto;padding:10px;background-color:#f1f1f1;display:inline-block;width:97%;">
+                        <div class="box-img" style="width: 20%;float: left;">
+                            <a href="https://www.jajuma.de/en" title="Hyvä Flags - Flag SVG Icons for Hyvä Themes Extension" target="_blank">
+			            <div class="jajuma-extlogo"></div>
+                            </a>
+                            <strong style="font-size: 10px;">Copyright ©
+                                <script>var today = new Date();
+                                document.write(today.getFullYear());</script>
+                                <a href="https://www.jajuma.de/en" target="_blank">www.jajuma.de</a>
+                            </strong>
+                            <div style="margin-top: 5px;">
+                                <a href="https://www.jajuma.de/en/jajuma-shop/online-shop-with-magento-2-and-hyva-themes" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 400"
+                                    class="w-10 h-10" width="25" height="25" style="position: relative;top: 5px;">
+                                    <rect width="400" height="400" fill="#F6F7FF"></rect>
+                                    <path d="M222.131 112.458L237.41 66.8783H290.403L275.043 112.458H222.131Z" fill="#14FFAF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M158.026 174.716C172.966 162.84 191.165
+                                    155.37 211.659 155.37C253.609 155.37 294.409 182.196 294.409
+                                    250.953V336H240.776V250.953C240.776 215.516 223.929 202.107 200.933 202.107C181.969
+                                    202.107 168.181 213.026 160.516 224.517V336H106.692V115.336H74L91.2077
+                                    64H158.026V174.716ZM272.988 109.567L286.407 69.7565H239.485L226.132
+                                    109.567H272.988ZM235.338 64H294.409L277.112 115.336H218.13L235.338 64Z"
+                                    fill="#0A23B9"></path>
+                                    </svg>
+                                    <span style="font-size: 16px;font-weight: 900;"> Theme Compatible</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 77%;float: left;padding-left: 3%;">
+                            <div class="name" style="font-size: 16px;">
+                                <b>Flag SVG Icons for
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 400" width="25" height="25"
+                                style="top: 5px;position: relative;">
+                                <rect width="400" height="400" fill="#F6F7FF"></rect>
+                                <path d="M222.131 112.458L237.41 66.8783H290.403L275.043 112.458H222.131Z" fill="#14FFAF"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M158.026 174.716C172.966 162.84 191.165 155.37 211.659 155.37C253.609 155.37 294.409 182.196 294.409 250.953V336H240.776V250.953C240.776 215.516 223.929 202.107 200.933 202.107C181.969 202.107 168.181 213.026 160.516 224.517V336H106.692V115.336H74L91.2077 64H158.026V174.716ZM272.988 109.567L286.407 69.7565H239.485L226.132 109.567H272.988ZM235.338 64H294.409L277.112 115.336H218.13L235.338 64Z" fill="#0A23B9"></path>
+                                </svg>
+                                Hyvä Themes</b> by <a href="https://www.jajuma.de/en" target="_blank"><b>JaJuMa</b></a>
+				        <div class="jajuma-minilogo"></div>
+                            </div>
+                            <hr>
+                            <br>
+                        <div class="more"><b>More Information About This Extension:</b>
+                            <br>
+                            <div><a href="https://www.jajuma.de/en/jajuma-develop/extensions/country-language-flag-icons-for-hyva-themes-extension"
+				                target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+				                viewBox="0 0 576 512" class="w-10 h-10" width="15" height="15"
+				                style="position: relative;top: 2px;">
+				                <!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License -
+				                https://fontawesome.com/license/free (Icons: CC BY 4.0,
+				                Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+				                <path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5
+				                450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8
+				                511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352
+				                472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1
+				                206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120
+				                512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02
+				                287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0
+				                288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8
+				                255.5L575.8 255.5z"></path></svg> Website</a> |
+				                <a href="https://hyva.extension.jajuma.de/"
+				                target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+				                viewBox="0 0 400 400" class="w-10 h-10" width="20" height="20" style="position:
+				                relative;top: 5px;">    <rect fill="#fff"></rect>    <path d="M222.131 112.458L237.41
+				                66.8783H290.403L275.043 112.458H222.131Z"></path>    <path fill-rule="evenodd"
+				                clip-rule="evenodd" d="M158.026 174.716C172.966 162.84 191.165 155.37 211.659
+				                155.37C253.609 155.37 294.409 182.196 294.409 250.953V336H240.776V250.953C240.776
+				                215.516 223.929 202.107 200.933 202.107C181.969 202.107 168.181 213.026 160.516
+				                224.517V336H106.692V115.336H74L91.2077 64H158.026V174.716ZM272.988 109.567L286.407
+				                69.7565H239.485L226.132 109.567H272.988ZM235.338 64H294.409L277.112
+				                115.336H218.13L235.338 64Z"></path></svg> Hyvä Theme Demo</a>
+				                <div style="float: right;">Installed Version: <b>1.0.0</b></div>
+				             </div>
+                        </div>
+                            <hr>
+                            <br>
+                            <div class="info"><b>Discover More Ideas To Improve Your Store:</b>
+                                <br>
+                                <div class="more-ideas-list">
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/ultimate-image-optimizer-extension-for-magento-2"
+                                       target="_blank">Ultimate Image Optimizer</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/shariff-social-share-buttons-extension-for-magento-2"
+                                       target="_blank">Shariff Social Share Buttons</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/webp-optimized-images-extension-for-magento-2"
+                                       target="_blank">WebP Optimized Images</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/prg-pattern-link-masking-for-magento-2"
+                                       target="_blank">PRG Pattern Link Masking</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/video-widget-gdpr-extension-for-magento-2"
+                                       target="_blank">Video Widget</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/page-preload-extension-for-magento-2"
+                                       target="_blank">Page Preload</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/honey-spam-anti-spam-extension-for-magento-2"
+                                       target="_blank">Honey Spam Anti-Spam</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/matomo-analytics-extension-for-magento-2"
+                                       target="_blank">Matomo Analytics</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/customer-registration-reminder-and-cleanup-extension-for-magento-2"
+                                       target="_blank">Customer Registration Reminder & Cleanup</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/category-grid-callouts-extension-for-magento-2"
+                                       target="_blank">Category Grid Callouts</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/customer-satisfaction-feedback-extension-for-magento-2"
+                                       target="_blank">Customer Satisfaction Feedback</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/auto-select-options-extension-for-magento-2"
+                                       target="_blank">Auto Select Options</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/proportional-pro-rata-dynamic-shipping-tax-plus-extension-for-magento-2"
+                                       target="_blank">Dynamic Shipping Tax Plus</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/back-forward-cache-extension-for-magento-2"
+                                       target="_blank">Back Forward Cache (bfcache)</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/magento-without-elasticsearch-mysql-search-extension-for-magento-2"
+                                       target="_blank">MySQL Search</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/resource-hints-preload-critical-resources-assets-extension-for-magento-2"
+                                       target="_blank">Preload Critical Resources + Assets</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/git-4-page-builder-extension-for-magento-2"
+                                       target="_blank">git 4 Page Builder</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/syntax-highlighter-4-page-builder-extension-for-magento-2"
+                                       target="_blank"><b>Free:</b> Syntax Highlighter 4 Page Builder</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/customer-navigation-manager-extension-for-magento-2"
+                                       target="_blank"><b>Free:</b> Customer Navigation Manager</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/dynamic-shipping-tax-extension-for-magento-2"
+                                       target="_blank"><b>Free:</b> Dynamic Shipping Tax</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/hyva-faq-widget-extension-for-hyva-themes"
+                                       target="_blank"><b>Free:</b> Hyvä FAQ Widget</a>
+                                    <a href="https://www.jajuma.de/en/jajuma-develop/extensions/hyva-pwa-extension-for-magento-2"
+                                       target="_blank"><b>Free:</b> Hyvä PWA</a>
+                                </div>
+                        </div>
+                            <hr>
+                        </div>
+                        </div>
+                    ]]>
+                    </comment>
+                </field>
+            </group>
+            <group id="demo" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Demo + Icon List</label>
+                <attribute type="expanded">1</attribute>
+                <field id="demo_icon_list" translate="label comment" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <frontend_model>Jajuma\HyvaFlags\Block\System\Config\Form\Jajuma\Module</frontend_model>
+                    <comment><![CDATA[
+                    <div style="margin: auto; padding: 10px;">
+                        <div class="messages" style="padding: 15px 15px 15px 55px;background: #f2f2f2;color: #676056;">
+                                <h2><b>Please see all almost 1000 available icons on our demo.</b></h2>
+                                    <p>The demo site provides a searchable list with all included icons.<br>
+                                       The demo also provides options to get the code for using the icons in
+                                       your projects easily by copy &amp; paste.
+                                       <br><br>
+                                       <a href="https://hyva.extension.jajuma.de/hyvaflags/icon/list"
+                                       title="Hyvä Flags Demo &amp;" target="_blank">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" class="w-10 h-10" width="15" height="15"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M448 48V384c-63 23-82 32-119 32-63 0-87-32-150-32-20 0-36 4-51 8V328c15-4 31-8 51-8 63 0 87 32 150 32 20 0 35-3 55-9V135c-20 6-35 9-55 9-63 0-87-32-150-32-51 0-75 21-115 29V448a31.6 31.6 0 0 1-32 32A31.6 31.6 0 0 1 0 448V64A31.6 31.6 0 0 1 32 32 31.6 31.6 0 0 1 64 64V77c40-8 64-29 115-29 63 0 87 32 150 32C366 80 385 71 448 48Z"></path></svg>
+                                        Go to Hyvä Flags Demo &amp;</a>
+                            </div>
+                    </div>
+                    ]]></comment>
+                </field>
+            </group>
+            <group id="manual" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Manual</label>
+                <attribute type="expanded">1</attribute>
+                <field id="manual_view_models" translate="label comment" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <frontend_model>Jajuma\HyvaFlags\Block\System\Config\Form\Jajuma\Module</frontend_model>
+                    <comment><![CDATA[
+                    <div style="margin: auto; padding: 10px;">
+                            <div class="messages" style="padding: 15px 15px 15px 55px;background: #f2f2f2;color: #676056;">
+                                <h2><b>How to use Flag icons in view models:</b></h2>
+                                   <ol type="1" style="padding-left: 15px;">
+                                      <li><p><b>Require one of the view models in your template:</b><br></p>
+                                        <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\Flagicons11 $flagicons11 */
+$flagicons11 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons11::class);</pre>
+                                        <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\Flagicons43 $flagicons43 */
+$flagicons43 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons43::class);</pre>
+                                        <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsCircle $flagiconscircle */
+$flagiconscircle = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\FlagiconsCircle::class);</pre>
+                                      </li>
+                                      <li><p><b>Then render the icons like this:</b><br></p>
+                                        <pre class="code">&lt;?= $flagicons11-&gt;acHtml('text-red-100', 24, 24) ?&gt;</pre>
+                                        <p>
+                                            <ul style="padding-left: 20px;list-style-type: disc;">
+                                                <li>The method name is the camel cased icon name, followed by Html.</li>
+                                                <li>In an IDE you should have autocompletion for all available methods.</li>
+                                                <li>The parameters are optional, and change the class (in single quotes) followed by 2 values for width and height attributes of the SVG element.</li>
+                                                <li>It is recommended to set all of them, so that the images are not rendered in huge sizes if CSS fails to load.</li>
+                                            </ul>
+                                        </p>
+                                        <p>or you may also pass additional attributes like this as an array:</p>
+                                        <pre class="code">&lt;?= $flagicons11->acHtml('w-10 h-10', 24, 24, ['style'=>'position:relative']) ?&gt;</pre>
+                                      </li>
+                                   </ol>
+                                <h2><b>How to use Flag icons in CMS content:</b></h2>
+                                    <p>Hyvä Flag module adds an icon directive to render icons in filtered content like CMS blocks or pages.<br>
+                                    So you may add icons in text / code blocks like this:</p>
+                                    <pre class="code">{{icon "flagicons/1x1/ac" classes="text-red-100" width=12 height=12}}</pre>
+                                    <p>
+                                        <ul style="padding-left: 20px;list-style-type: disc;">
+                                            <li>"classes" parameter is used for setting any css class.</li>
+                                            <li>"width"/"height" parameters are used for setting width/height attributes for icons.</li>
+                                            <li>Hint: You may get the code snippets for copy & paste for each icon on the demo - see link below.</li>
+                                        </ul>
+                                    </p>
+                            </div>
+                    </div>
+                    <style>
+                        pre.code {
+                            background: #3c3c3c;
+                            border: 1px solid #ddd;
+                            border-left: 5px solid #efb602;
+                            color: #fef4f4;
+                            page-break-inside: avoid;
+                            font-family: monospace;
+                            font-size: 15px;
+                            line-height: 1.6;
+                            margin-bottom: 1.6em;
+                            max-width: 100%;
+                            overflow: auto;
+                            padding: 1em 1.5em;
+                            display: block;
+                            word-wrap: break-word;
+                            border-radius: 10px;
+                        }
+                    </style>
+                    ]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
