@@ -191,8 +191,12 @@
 $flagicons11 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons11::class);</pre>
                                         <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\Flagicons43 $flagicons43 */
 $flagicons43 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons43::class);</pre>
+                                        <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\Flagicons32 $flagicons32 */
+$flagicons32 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons32::class);</pre>
                                         <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsCircle $flagiconscircle */
 $flagiconscircle = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\FlagiconsCircle::class);</pre>
+                                        <pre class="code">/** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial $flagiconsofficial */
+$flagiconsofficial = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial::class);</pre>
                                       </li>
                                       <li><p><b>Then render the icons like this:</b><br></p>
                                         <pre class="code">&lt;?= $flagicons11-&gt;acHtml('text-red-100', 24, 24) ?&gt;</pre>

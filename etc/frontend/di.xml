@@ -17,9 +17,19 @@
             <argument name="iconPathPrefix" xsi:type="string">Jajuma_HyvaFlags::svg/4x3</argument>
         </arguments>
     </type>
+    <type name="Jajuma\HyvaFlags\ViewModel\Flagicons32">
+        <arguments>
+            <argument name="iconPathPrefix" xsi:type="string">Jajuma_HyvaFlags::svg/3x2</argument>
+        </arguments>
+    </type>
     <type name="Jajuma\HyvaFlags\ViewModel\FlagiconsCircle">
         <arguments>
             <argument name="iconPathPrefix" xsi:type="string">Jajuma_HyvaFlags::svg/circle</argument>
+        </arguments>
+    </type>
+    <type name="Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial">
+        <arguments>
+            <argument name="iconPathPrefix" xsi:type="string">Jajuma_HyvaFlags::svg/official</argument>
         </arguments>
     </type>
     <type name="Hyva\Theme\ViewModel\SvgIcons">
