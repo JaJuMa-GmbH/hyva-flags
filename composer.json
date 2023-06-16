@@ -1,9 +1,9 @@
 {
   "name": "jajuma/hyva-flags",
-  "description": "This Magento 2 extension provides country & language icons as SVGs for Magento 2 sites using",
+  "description": "This Magento 2 extension provides country & language icons as SVGs for Magento 2 sites using Hyvä Themes",
   "type": "magento2-module",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "email": "info@jajuma.de",
