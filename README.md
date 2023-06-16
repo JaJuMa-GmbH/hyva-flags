@@ -6,7 +6,8 @@ Hyvä Flags extension by [JaJuMa](https://www.jajuma.de/de/jajuma-shop/online-sh
 
 The module includes:
 * Square Flag Icons (1:1 ratio)
-* Rectangle Flag Icons (4:3 ratio) &
+* Rectangle Flag Icons (3:2 + 4:3 ratio) 
+* Official Flag Sizes &
 * Circle Flag Icons
 
 
@@ -38,11 +39,13 @@ composer require jajuma/hyva-flags
 
 ### How to use country & language flag icons in Hyvä Themes in view models
 
-JaJuMa "Hyvä Flags" module provides 3 view models:
+JaJuMa "Hyvä Flags" module provides 5 view models:
 
 * `Flagicons11`
+* `Flagicons32`
 * `Flagicons43`
 * `FlagiconsCircle`
+* `FlagiconsOfficial`
 
 Require one of the view models in your template:
 
@@ -51,12 +54,20 @@ Require one of the view models in your template:
 $flagicons11 = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\Flagicons11::class);
 ```
 ```
+/** @var \Jajuma\HyvaFlags\ViewModel\Flagicons32 $flagicons32 */
+$flagicons32 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons32::class);
+```
+```
 /** @var \Jajuma\HyvaFlags\ViewModel\Flagicons43 $flagicons43 */
 $flagicons43 = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\Flagicons43::class);
 ```
 ```
 /** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsCircle $flagiconscircle */
 $flagiconscircle = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\FlagiconsCircle::class);
+```
+```
+/** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial $flagiconsofficial */
+$flagiconsofficial = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial::class);
 ```
 
 Then render the icons like this:
@@ -104,8 +115,10 @@ The code is licensed under the [MIT License (MIT)](https://github.com/JaJuMa/Hyv
 ## Credits
 
 Credits for the SVG icons:
-* Square & Rectangle Format: [@lipis](https://github.com/lipis/flag-icons)
+* Square & Rectangle Format 4:3: [@lipis](https://github.com/lipis/flag-icons)
+* Rectangle Format 3:2: [@catamphetamine](https://github.com/catamphetamine/country-flag-icons)
 * Circle format: [@HatScripts](https://github.com/HatScripts/circle-flag)
+* Official sizes: [@hampusborgos](https://github.com/hampusborgos/country-flags)
 
 ## Other [Magento 2 Extensions](ttps://www.jajuma.de/en/jajuma-develop/magento-extensions) by [JaJuMa](https://www.jajuma.de/)
 
