@@ -55,7 +55,7 @@ $flagicons11 = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\Flagicons11::cla
 ```
 ```
 /** @var \Jajuma\HyvaFlags\ViewModel\Flagicons32 $flagicons32 */
-$flagicons32 = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\Flagicons32::class);
+$flagicons32 = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\Flagicons32::class);
 ```
 ```
 /** @var \Jajuma\HyvaFlags\ViewModel\Flagicons43 $flagicons43 */
@@ -67,7 +67,7 @@ $flagiconscircle = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\FlagiconsCir
 ```
 ```
 /** @var \Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial $flagiconsofficial */
-$flagiconsofficial = $viewModels-&gt;require(\Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial::class);
+$flagiconsofficial = $viewModels->require(\Jajuma\HyvaFlags\ViewModel\FlagiconsOfficial::class);
 ```
 
 Then render the icons like this:
